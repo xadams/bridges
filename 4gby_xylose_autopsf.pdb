@@ -1,0 +1,22 @@
+REMARK original generated coordinate pdb file
+ATOM      1  C1  BXYLX   1      -1.419   3.976  -0.365  1.00  0.00      CARE C
+ATOM      2  H1  BXYLX   1      -1.652   2.898  -0.494  1.00  0.00      CARE H
+ATOM      3  O1  BXYLX   1      -1.611   4.654  -1.596  1.00  0.00      CARE O
+ATOM      4  HO1 BXYLX   1      -1.407   5.584  -1.476  1.00  0.00      CARE H
+ATOM      5  C5  BXYLX   1      -2.136   4.032   1.912  1.00  0.00      CARE C
+ATOM      6  H51 BXYLX   1      -2.481   2.976   1.918  1.00  0.00      CARE H
+ATOM      7  H52 BXYLX   1      -2.769   4.627   2.604  1.00  0.00      CARE H
+ATOM      8  O5  BXYLX   1      -2.295   4.551   0.598  1.00  0.00      CARE O
+ATOM      9  C2  BXYLX   1       0.007   4.266   0.004  1.00  0.00      CARE C
+ATOM     10  H2  BXYLX   1       0.167   5.360   0.111  1.00  0.00      CARE H
+ATOM     11  O2  BXYLX   1       0.824   3.762  -1.054  1.00  0.00      CARE O
+ATOM     12  HO2 BXYLX   1       1.440   4.447  -1.327  1.00  0.00      CARE H
+ATOM     13  C3  BXYLX   1       0.303   3.604   1.332  1.00  0.00      CARE C
+ATOM     14  H3  BXYLX   1       0.142   2.507   1.263  1.00  0.00      CARE H
+ATOM     15  O3  BXYLX   1       1.670   3.867   1.645  1.00  0.00      CARE O
+ATOM     16  HO3 BXYLX   1       2.229   3.371   1.043  1.00  0.00      CARE H
+ATOM     17  C4  BXYLX   1      -0.692   4.083   2.396  1.00  0.00      CARE C
+ATOM     18  H4  BXYLX   1      -0.444   5.129   2.674  1.00  0.00      CARE H
+ATOM     19  O4  BXYLX   1      -0.661   3.189   3.508  1.00  0.00      CARE O
+ATOM     20  HO4 BXYLX   1      -0.395   3.674   4.292  1.00  0.00      CARE H
+END
