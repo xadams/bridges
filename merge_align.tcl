@@ -77,7 +77,7 @@ if {abs($diff27) > abs($diff260)} {$sugar moveby {0 0 -100}}
 
 # DOES NOT WORK
 # remove conflicting water molecules
-set conflict_water [atomselect top "same residue as water within 3 of resname $sugar_res"]
+set conflict_water [atomselect top "same residue as water within 2 of resname $sugar_res"]
 foreach segid [$conflict_water get segid] resid [$conflict_water get resid] {
     delatom $segid $resid
 }
