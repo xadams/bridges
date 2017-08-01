@@ -12,17 +12,20 @@ if [[ $1 = "help" ]]; then
     exit 
 fi
 
+#pick glucose or xylose, residue is either BGLC or BXYL
 echo -n "Enter sugar (glucose or xylose): "
 read name
+short="${name:0:1}"
 
-#FIXME
-#if [ [$name[0]='g'] || [$name[0]='G'] ]; then
-#    sugar_res = BGLC
-#else
-sugar_res="BXYL"
-#fi
+if [ $short = "g" ] ; then
+    sugar_res="BGLC"
+elif [ $short = "G" ] ; then
+    sugar_res="BGLC"
+else
+    sugar_res="BXYL"
+fi
 
-#ask user for glucose or xylose, residue is either BGLC or BXYL
+
 # if one argument is provided, assume the standard psf file
 if [ -z "$2" ]; then
 #call VMD without a display window and build a pdb from the inputs
