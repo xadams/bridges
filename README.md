@@ -11,17 +11,24 @@ Also included are a topology file for lipids, and a sample .pdb and .psf for D-x
 
 # How to Align Glucose/Xylose near a Protein
 1. File organization:
+
   \sugar_align
   
-      top_all27_prot_lipid.inp
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;top_all27_prot_lipid.inp
       
-      4gby_glucose_autopsf.pdb
-      4gby_glucose_autopsf.psf
-      my_protein.pdb
-      my_protein.psf
-      \tcl_and_sh_files
-            sugar_setup.sh
-            merge_align.tcl
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4gby_glucose_autopsf.pdb
+      
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4gby_glucose_autopsf.psf
+      
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;my_protein.pdb
+      
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;my_protein.psf
+      
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\tcl_and_sh_files
+      
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sugar_setup.sh
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;merge_align.tcl
 
 2. $  cd ~/path_to_program/sugar_align/tcl_and_sh_files/
    $  bash sugar_setup.sh ../<my_protein.pdb> ../<my_protein.psf
