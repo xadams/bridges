@@ -12,7 +12,9 @@ Also included are a topology file for lipids, and a sample .pdb and .psf for D-x
 # How to Align Glucose/Xylose near a Protein
 1. File organization:
   \sugar_align
+  
       top_all27_prot_lipid.inp
+      
       4gby_glucose_autopsf.pdb
       4gby_glucose_autopsf.psf
       my_protein.pdb
