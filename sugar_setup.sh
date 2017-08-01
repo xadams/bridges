@@ -12,5 +12,29 @@ if [[ $1 = "help" ]]; then
     exit 
 fi
 
+echo -n "Enter sugar (glucose or xylose): "
+read name
 
-/Applications/VMD\ 1.9.3.app/Contents/Resources/VMD.app/Contents/MacOS/VMD -e ~/Documents/MayesLab/Protein\ Files/hxt36/xylose/merge_align.tcl -dispdev text
+#FIXME
+#if [ [$name[0]='g'] || [$name[0]='G'] ]; then
+#    sugar_res = BGLC
+#else
+sugar_res="BXYL"
+#fi
+
+#ask user for glucose or xylose, residue is either BGLC or BXYL
+# if one argument is provided, assume the standard psf file
+if [ -z "$2" ]; then
+#call VMD without a display window and build a pdb from the inputs
+    /Applications/VMD\ 1.9.3.app/Contents/Resources/VMD.app/Contents/MacOS/VMD -e \
+    ~/tcl_bin/sugar_setup/tcl/merge_align.tcl -dispdev text ../step5_assembly.xplor_ext.psf $1 -args $sugar_res $1 ../step5_assembly.xplor_ext.psf
+elif [ -f $2 ]
+    then
+        #call VMD without a display window and build a pdb from the inputs
+        /Applications/VMD\ 1.9.3.app/Contents/Resources/VMD.app/Contents/MacOS/VMD -e \
+        ~/tcl_bin/sugar_setup/tcl/merge_align.tcl -dispdev text $1 $2 -args $sugar_res $1 $2
+else
+    echo "Hey buddy, $2 doesn't exist"
+exit
+fi
+rm temp.pdb temp.psf
