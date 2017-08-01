@@ -7,7 +7,6 @@
 # Load topology file and psfgen
 
 package require psfgen
-#topology top_all27_prot_lipid.inp
 
 #accept the arg from sugar_setup.sh
 #TODO: protein
