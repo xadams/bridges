@@ -12,6 +12,12 @@ if [[ $1 = "help" ]]; then
     exit 
 fi
 
+# if no arguments are given, stop the program here instead of crashing in VMD
+if [ -z $1 ]
+    echo "No arguments given. Type '$0 help' for detailed instructions."
+    exit
+fi
+
 #pick glucose or xylose, residue is either BGLC or BXYL
 echo -n "Enter sugar (glucose or xylose): "
 read name
