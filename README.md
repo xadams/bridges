@@ -31,9 +31,12 @@ Also included are a topology file for lipids, and a sample .pdb and .psf for D-x
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;merge_align.tcl
 
 2. $  cd ~/path_to_program/sugar_align/tcl_and_sh_files/
+
    $  bash sugar_setup.sh ../<my_protein.pdb> ../<my_protein.psf
+   
    Replace <my_protein.pdb> and <my_protein.psf> with the relevant protein files, without the brackets.
 
 3. "Enter sugar (glucose or xylose): "
+
     Enter your sugar here, and program should run to completion. The output will be one .pdb and one .psf with a sugar aligned     nearby your protein.
   
