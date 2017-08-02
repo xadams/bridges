@@ -7,14 +7,9 @@
 # Load topology file and psfgen
 
 package require psfgen
-#topology top_all27_prot_lipid.inp
 
 #accept the arg from sugar_setup.sh
 #TODO: protein
-
-puts $argv
-    #remove this
-
 
 if { ([file extension [file tail [lindex $argv 1]]] == ".pdb") &&   ([info exists [lindex $argv 2]])}   {
 
@@ -104,3 +99,6 @@ if {abs($diff27) > abs($diff260)} {$sugar moveby {0 0 -60}}
 set new_sel [atomselect top "all and not water within 2 of resname $sugar_res"]
 $new_sel writepdb output.pdb
 $new_sel writepsf output.psf
+
+# exit in order to return the user to command line
+exit
