@@ -13,8 +13,9 @@ if [[ $1 = "help" ]]; then
 fi
 
 # if no arguments are given, stop the program here instead of crashing in VMD
+filename=$(basename $0)
 if [ -z $1 ]
-    echo "No arguments given. Type '$0 help' for detailed instructions."
+    echo "No arguments given. Type '$filename help' for detailed instructions."
     exit
 fi
 
